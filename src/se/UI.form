@@ -29,6 +29,7 @@
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="resizable" type="boolean" value="false"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -54,11 +55,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="panelTitulo" alignment="1" max="32767" attributes="0"/>
                   <Component id="panelPreguntas" alignment="1" max="32767" attributes="0"/>
-                  <Group type="102" alignment="1" attributes="0">
-                      <Component id="botonLimpiarOpciones" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="botonRespuesta" min="-2" max="-2" attributes="0"/>
-                  </Group>
+                  <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -70,13 +67,10 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="panelTitulo" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="panelPreguntas" max="32767" attributes="0"/>
+              <Component id="panelPreguntas" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="botonRespuesta" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="botonLimpiarOpciones" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -97,7 +91,7 @@
                   <Component id="opcionP1NA" min="-2" max="-2" attributes="0"/>
               </Group>
               <Group type="102" attributes="0">
-                  <Component id="etP2" pref="273" max="32767" attributes="0"/>
+                  <Component id="etP2" pref="279" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="opcionP2Si" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
@@ -106,7 +100,7 @@
                   <Component id="opcionP2NA" min="-2" max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
-                  <Component id="etP3" pref="273" max="32767" attributes="0"/>
+                  <Component id="etP3" pref="279" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="opcionP3Si" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
@@ -115,7 +109,7 @@
                   <Component id="opcionP3NA" min="-2" max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
-                  <Component id="etP4" pref="273" max="32767" attributes="0"/>
+                  <Component id="etP4" pref="279" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="opcionP4Si" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
@@ -124,16 +118,16 @@
                   <Component id="opcionP4NA" min="-2" max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
-                  <Component id="etP5" pref="273" max="32767" attributes="0"/>
+                  <Component id="etP5" pref="279" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="opcionP5Si" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="opcionP5No" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="opciónP5NA" min="-2" max="-2" attributes="0"/>
+                  <Component id="opcionP5NA" min="-2" max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
-                  <Component id="etP6" pref="273" max="32767" attributes="0"/>
+                  <Component id="etP6" pref="279" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="opcionP6Si" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
@@ -142,7 +136,7 @@
                   <Component id="opcionP6NA" min="-2" max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
-                  <Component id="etP7" pref="273" max="32767" attributes="0"/>
+                  <Component id="etP7" pref="279" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="opcionP7Si" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
@@ -151,7 +145,7 @@
                   <Component id="opcionP7NA" min="-2" max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
-                  <Component id="etP8" pref="273" max="32767" attributes="0"/>
+                  <Component id="etP8" pref="279" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="opcionP8Si" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
@@ -160,7 +154,7 @@
                   <Component id="opcionP8NA" min="-2" max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
-                  <Component id="etP9" pref="273" max="32767" attributes="0"/>
+                  <Component id="etP9" pref="279" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="opcionP9Si" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
@@ -169,7 +163,7 @@
                   <Component id="opcionP9NA" min="-2" max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
-                  <Component id="etP10" pref="273" max="32767" attributes="0"/>
+                  <Component id="etP10" pref="279" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="opcionP10Si" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
@@ -178,7 +172,7 @@
                   <Component id="opcionP10NA" min="-2" max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
-                  <Component id="etP11" pref="273" max="32767" attributes="0"/>
+                  <Component id="etP11" pref="279" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="opcionP11Si" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
@@ -187,7 +181,7 @@
                   <Component id="opcionP11NA" min="-2" max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
-                  <Component id="etP12" pref="273" max="32767" attributes="0"/>
+                  <Component id="etP12" pref="279" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="opcionP12Si" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
@@ -232,7 +226,7 @@
                       <Component id="etP5" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="opcionP5Si" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="opcionP5No" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="opciónP5NA" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="opcionP5NA" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -276,13 +270,14 @@
                       <Component id="opcionP11No" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="opcionP11NA" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="etP12" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="opcionP12Si" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="opcionP12No" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="opcionP12NA" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <EmptySpace pref="50" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -425,7 +420,7 @@
             <Property name="text" type="java.lang.String" value="No"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="opci&#xf3;nP5NA">
+        <Component class="javax.swing.JRadioButton" name="opcionP5NA">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="grupoP5"/>
@@ -669,15 +664,45 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="botonRespuesta">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Siguiente"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="botonLimpiarOpciones">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Reiniciar"/>
-      </Properties>
-    </Component>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="botonLimpiarOpciones" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="botonRespuesta" min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace min="0" pref="27" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="botonLimpiarOpciones" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="botonRespuesta" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="botonLimpiarOpciones">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Reiniciar"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonLimpiarOpcionesActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="botonRespuesta">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Siguiente"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
   </SubComponents>
 </Form>

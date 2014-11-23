@@ -16,6 +16,8 @@ public class UI extends javax.swing.JFrame {
      */
     public UI() {
         initComponents();
+        limpiarSeleccion();
+        inicializarPreguntas();
     }
 
     /**
@@ -59,7 +61,7 @@ public class UI extends javax.swing.JFrame {
         etP5 = new javax.swing.JLabel();
         opcionP5Si = new javax.swing.JRadioButton();
         opcionP5No = new javax.swing.JRadioButton();
-        opciónP5NA = new javax.swing.JRadioButton();
+        opcionP5NA = new javax.swing.JRadioButton();
         etP6 = new javax.swing.JLabel();
         opcionP6Si = new javax.swing.JRadioButton();
         opcionP6No = new javax.swing.JRadioButton();
@@ -90,10 +92,12 @@ public class UI extends javax.swing.JFrame {
         opcionP12NA = new javax.swing.JRadioButton();
         panelTitulo = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        botonRespuesta = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
         botonLimpiarOpciones = new javax.swing.JButton();
+        botonRespuesta = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         etP1.setText("jLabel1");
 
@@ -147,8 +151,8 @@ public class UI extends javax.swing.JFrame {
         grupoP5.add(opcionP5No);
         opcionP5No.setText("No");
 
-        grupoP5.add(opciónP5NA);
-        opciónP5NA.setText("Sin relevancia");
+        grupoP5.add(opcionP5NA);
+        opcionP5NA.setText("Sin relevancia");
 
         etP6.setText("jLabel1");
 
@@ -240,7 +244,7 @@ public class UI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP1NA))
             .addGroup(panelPreguntasLayout.createSequentialGroup()
-                .addComponent(etP2, javax.swing.GroupLayout.DEFAULT_SIZE, 273, Short.MAX_VALUE)
+                .addComponent(etP2, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP2Si)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -248,7 +252,7 @@ public class UI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP2NA))
             .addGroup(panelPreguntasLayout.createSequentialGroup()
-                .addComponent(etP3, javax.swing.GroupLayout.DEFAULT_SIZE, 273, Short.MAX_VALUE)
+                .addComponent(etP3, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP3Si)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -256,7 +260,7 @@ public class UI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP3NA))
             .addGroup(panelPreguntasLayout.createSequentialGroup()
-                .addComponent(etP4, javax.swing.GroupLayout.DEFAULT_SIZE, 273, Short.MAX_VALUE)
+                .addComponent(etP4, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP4Si)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -264,15 +268,15 @@ public class UI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP4NA))
             .addGroup(panelPreguntasLayout.createSequentialGroup()
-                .addComponent(etP5, javax.swing.GroupLayout.DEFAULT_SIZE, 273, Short.MAX_VALUE)
+                .addComponent(etP5, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP5Si)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP5No)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(opciónP5NA))
+                .addComponent(opcionP5NA))
             .addGroup(panelPreguntasLayout.createSequentialGroup()
-                .addComponent(etP6, javax.swing.GroupLayout.DEFAULT_SIZE, 273, Short.MAX_VALUE)
+                .addComponent(etP6, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP6Si)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -280,7 +284,7 @@ public class UI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP6NA))
             .addGroup(panelPreguntasLayout.createSequentialGroup()
-                .addComponent(etP7, javax.swing.GroupLayout.DEFAULT_SIZE, 273, Short.MAX_VALUE)
+                .addComponent(etP7, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP7Si)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -288,7 +292,7 @@ public class UI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP7NA))
             .addGroup(panelPreguntasLayout.createSequentialGroup()
-                .addComponent(etP8, javax.swing.GroupLayout.DEFAULT_SIZE, 273, Short.MAX_VALUE)
+                .addComponent(etP8, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP8Si)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -296,7 +300,7 @@ public class UI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP8NA))
             .addGroup(panelPreguntasLayout.createSequentialGroup()
-                .addComponent(etP9, javax.swing.GroupLayout.DEFAULT_SIZE, 273, Short.MAX_VALUE)
+                .addComponent(etP9, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP9Si)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -304,7 +308,7 @@ public class UI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP9NA))
             .addGroup(panelPreguntasLayout.createSequentialGroup()
-                .addComponent(etP10, javax.swing.GroupLayout.DEFAULT_SIZE, 273, Short.MAX_VALUE)
+                .addComponent(etP10, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP10Si)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -312,7 +316,7 @@ public class UI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP10NA))
             .addGroup(panelPreguntasLayout.createSequentialGroup()
-                .addComponent(etP11, javax.swing.GroupLayout.DEFAULT_SIZE, 273, Short.MAX_VALUE)
+                .addComponent(etP11, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP11Si)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -320,7 +324,7 @@ public class UI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP11NA))
             .addGroup(panelPreguntasLayout.createSequentialGroup()
-                .addComponent(etP12, javax.swing.GroupLayout.DEFAULT_SIZE, 273, Short.MAX_VALUE)
+                .addComponent(etP12, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP12Si)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -359,7 +363,7 @@ public class UI extends javax.swing.JFrame {
                     .addComponent(etP5)
                     .addComponent(opcionP5Si)
                     .addComponent(opcionP5No)
-                    .addComponent(opciónP5NA))
+                    .addComponent(opcionP5NA))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(panelPreguntasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(etP6)
@@ -396,12 +400,13 @@ public class UI extends javax.swing.JFrame {
                     .addComponent(opcionP11Si)
                     .addComponent(opcionP11No)
                     .addComponent(opcionP11NA))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(panelPreguntasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(etP12)
                     .addComponent(opcionP12Si)
                     .addComponent(opcionP12No)
-                    .addComponent(opcionP12NA)))
+                    .addComponent(opcionP12NA))
+                .addContainerGap(50, Short.MAX_VALUE))
         );
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -424,9 +429,32 @@ public class UI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        botonLimpiarOpciones.setText("Reiniciar");
+        botonLimpiarOpciones.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonLimpiarOpcionesActionPerformed(evt);
+            }
+        });
+
         botonRespuesta.setText("Siguiente");
 
-        botonLimpiarOpciones.setText("Reiniciar");
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(botonLimpiarOpciones)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(botonRespuesta))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 27, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(botonLimpiarOpciones)
+                    .addComponent(botonRespuesta)))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -437,10 +465,7 @@ public class UI extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(panelTitulo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(panelPreguntas, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(botonLimpiarOpciones)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(botonRespuesta)))
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -449,16 +474,62 @@ public class UI extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(panelTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(panelPreguntas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(panelPreguntas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(botonRespuesta)
-                    .addComponent(botonLimpiarOpciones))
-                .addContainerGap())
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+    
+    private void inicializarPreguntas(){
+        String pregunta1 = "¿Esta bien?";
+        String pregunta2 = "¿Esta bien?";
+        String pregunta3 = "¿Esta bien?";
+        String pregunta4 = "¿Esta bien?";
+        String pregunta5 = "¿Esta bien?";
+        String pregunta6 = "¿Esta bien?";
+        String pregunta7 = "¿Esta bien?";
+        String pregunta8 = "¿Esta bien?";
+        String pregunta9 = "¿Esta bien?";
+        String pregunta10 = "¿Esta bien?";
+        String pregunta11 = "¿Esta bien?";
+        String pregunta12 = "¿Esta bien?";
+ 
+        etP1.setText(pregunta1);
+        etP2.setText(pregunta2);
+        etP3.setText(pregunta3);
+        etP4.setText(pregunta4);
+        etP5.setText(pregunta5);
+        etP6.setText(pregunta6);
+        etP7.setText(pregunta7);
+        etP8.setText(pregunta8);
+        etP9.setText(pregunta9);
+        etP10.setText(pregunta10);
+        etP11.setText(pregunta11);
+        etP12.setText(pregunta12);
+    }
+    
+    /* pone todas las opciona a "No importa"*/
+    private void limpiarSeleccion(){
+        opcionP1NA.setSelected(true);
+        opcionP2NA.setSelected(true);
+        opcionP3NA.setSelected(true);
+        opcionP4NA.setSelected(true);
+        opcionP5NA.setSelected(true);
+        opcionP6NA.setSelected(true);
+        opcionP7NA.setSelected(true);
+        opcionP8NA.setSelected(true);
+        opcionP9NA.setSelected(true);
+        opcionP10NA.setSelected(true);
+        opcionP11NA.setSelected(true);
+        opcionP12NA.setSelected(true);
+    }
+    
+    private void botonLimpiarOpcionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonLimpiarOpcionesActionPerformed
+        limpiarSeleccion();
+    }//GEN-LAST:event_botonLimpiarOpcionesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -524,6 +595,7 @@ public class UI extends javax.swing.JFrame {
     private javax.swing.ButtonGroup grupoP8;
     private javax.swing.ButtonGroup grupoP9;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JRadioButton opcionP10NA;
     private javax.swing.JRadioButton opcionP10No;
     private javax.swing.JRadioButton opcionP10Si;
@@ -545,6 +617,7 @@ public class UI extends javax.swing.JFrame {
     private javax.swing.JRadioButton opcionP4NA;
     private javax.swing.JRadioButton opcionP4No;
     private javax.swing.JRadioButton opcionP4Si;
+    private javax.swing.JRadioButton opcionP5NA;
     private javax.swing.JRadioButton opcionP5No;
     private javax.swing.JRadioButton opcionP5Si;
     private javax.swing.JRadioButton opcionP6NA;
@@ -559,7 +632,6 @@ public class UI extends javax.swing.JFrame {
     private javax.swing.JRadioButton opcionP9NA;
     private javax.swing.JRadioButton opcionP9No;
     private javax.swing.JRadioButton opcionP9Si;
-    private javax.swing.JRadioButton opciónP5NA;
     private javax.swing.JPanel panelPreguntas;
     private javax.swing.JPanel panelTitulo;
     // End of variables declaration//GEN-END:variables
