@@ -31,11 +31,14 @@ public class VentanaResultados extends javax.swing.JFrame {
         textoResultados = new javax.swing.JTextArea();
         jLabel1 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Herramientas Recomendadas");
 
         textoResultados.setColumns(20);
+        textoResultados.setFont(new java.awt.Font("Calibri Light", 0, 14)); // NOI18N
         textoResultados.setRows(5);
+        textoResultados.setDisabledTextColor(new java.awt.Color(51, 51, 51));
+        textoResultados.setEnabled(false);
         jScrollPane1.setViewportView(textoResultados);
 
         jLabel1.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N

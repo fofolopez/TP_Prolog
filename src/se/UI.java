@@ -103,7 +103,7 @@ public class UI extends javax.swing.JFrame {
 
         jTextArea1.setBackground(new java.awt.Color(204, 204, 204));
         jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jTextArea1.setFont(new java.awt.Font("Calibri Light", 0, 14)); // NOI18N
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(4);
         jTextArea1.setText("1. Seleccione las opciones de acuerdo a la aplicación \nweb que desea realizar.\n2. Presione el botón \"Siguiente\" para verificar las \nherramientas recomendadas para utilizar.");
@@ -558,6 +558,8 @@ public class UI extends javax.swing.JFrame {
                     resultado += "Base de datos: " + s.get("BD")+"\n\n";
                     System.out.println(resultado);
                 }
+                if(resultado=="")
+                    resultado = "La selección no obtuvo resultados.\nIntente nuevamente";
                 VentanaResultados vr = new VentanaResultados();
                 vr.setResultados(resultado);
                 vr.setVisible(true);
