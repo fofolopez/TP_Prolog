@@ -13,7 +13,8 @@ herramientas(c_sharp, grande, asp_net,  apr_facil, cmp_dificil, visual_studio, s
 % bases no sql
 herramientas(python, regular, django, apr_facil, cmp_normal, pyCharm, seguro, eficiente, escalable, pago, mantenible, mongo, no_sql).
 herramientas(python, regular, django, apr_facil, cmp_normal, aptana, seguro, eficiente, escalable, gratis, mantenible, mongo, no_sql).
-
+herramientas(python, grande, django, apr_facil, cmp_normal, pyCharm, seguro, eficiente, escalable, pago, mantenible, mongo, no_sql).
+herramientas(python, grande, django, apr_facil, cmp_normal, aptana, seguro, eficiente, escalable, gratis, mantenible, mongo, no_sql).
 % bases sql
 herramientas(python, regular, django, apr_facil, cmp_normal, pyCharm, seguro, no_eficiente, escalable, pago, mantenible, mysql, sql).
 herramientas(python, regular, django, apr_facil, cmp_normal, aptana, seguro, no_eficiente, escalable, gratis, mantenible, mysql, sql).
@@ -21,7 +22,6 @@ herramientas(python, regular, django, apr_facil, cmp_normal, aptana, seguro, no_
 % ----------------- cakephp -------------
 % bases no sql
 herramientas(php, regular, cakephp, apr_normal, cmp_normal, netbeans, seguro, eficiente, no_escalable, gratis, mantenible, mongo, no_sql).
-herramientas(php, regular, cakephp, apr_normal, cmp_normal, phpStorm, seguro, eficiente, no_escalable, pago, mantenible, mongo, no_sql).
 
 % con bases sql
 herramientas(php, regular, cakephp, apr_normal, cmp_normal, netbeans, seguro, eficiente, no_escalable, gratis, mantenible, mysql, sql).
@@ -29,8 +29,6 @@ herramientas(php, regular, cakephp, apr_normal, cmp_normal, phpStorm, seguro, ef
 
 % ----------------- zend -------------
 % bases no sql
-herramientas(php, grande, zend, apr_normal, cmp_dificil, zend_studio, seguro, eficiente, escalable, pago, mantenible, mongo, no_sql).
-herramientas(php, grande, zend, apr_normal, cmp_dificil, netbeans, seguro, eficiente, escalable, gratis, mantenible, mongo, no_sql).
 
 % con bases sql
 herramientas(php, grande, zend, apr_normal, cmp_dificil, zend_studio, seguro, eficiente, escalable, pago, mantenible, oracle, sql).
@@ -38,8 +36,6 @@ herramientas(php, grande, zend, apr_normal, cmp_dificil, netbeans, seguro, efici
 
 % ----------------- symfony-------------
 % bases no sql
-herramientas(php, grande, symfony, apr_dificil, cmp_dificil, netbeans, seguro, eficiente, escalable, gratis, mantenible, mongo, no_sql).
-herramientas(php, grande, symfony, apr_dificil, cmp_dificil, phpstorm, seguro, eficiente, escalable, págo, mantenible, mongo, no_sql).
 
 % basessql
 herramientas(php, grande, symfony, apr_dificil, cmp_dificil, netbeans, seguro, eficiente, escalable, gratis, mantenible, mysql, sql).

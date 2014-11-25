@@ -89,14 +89,6 @@ public class UI extends javax.swing.JFrame {
         opcionP10Si = new javax.swing.JRadioButton();
         opcionP10No = new javax.swing.JRadioButton();
         opcionP10NA = new javax.swing.JRadioButton();
-        etP11 = new javax.swing.JLabel();
-        opcionP11Si = new javax.swing.JRadioButton();
-        opcionP11No = new javax.swing.JRadioButton();
-        opcionP11NA = new javax.swing.JRadioButton();
-        etP12 = new javax.swing.JLabel();
-        opcionP12Si = new javax.swing.JRadioButton();
-        opcionP12No = new javax.swing.JRadioButton();
-        opcionP12NA = new javax.swing.JRadioButton();
         panelTitulo = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
@@ -105,7 +97,6 @@ public class UI extends javax.swing.JFrame {
         botonAyuda = new javax.swing.JButton();
 
         dialogoAyuda.setTitle("Ayuda");
-        dialogoAyuda.setLocationByPlatform(true);
         dialogoAyuda.setMinimumSize(new java.awt.Dimension(350, 160));
         dialogoAyuda.setPreferredSize(new java.awt.Dimension(350, 160));
         dialogoAyuda.setResizable(false);
@@ -147,8 +138,10 @@ public class UI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Sistema experto para la escogencia de herramientas en el desarrollo de software");
+        dialogoAyuda.getAccessibleContext().setAccessibleParent(panelPreguntas);
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Aplicaciones Web");
         setResizable(false);
 
         etP1.setText("jLabel1");
@@ -261,28 +254,6 @@ public class UI extends javax.swing.JFrame {
         grupoP10.add(opcionP10NA);
         opcionP10NA.setText("Sin relevancia");
 
-        etP11.setText("jLabel1");
-
-        grupoP11.add(opcionP11Si);
-        opcionP11Si.setText("Si");
-
-        grupoP11.add(opcionP11No);
-        opcionP11No.setText("No");
-
-        grupoP11.add(opcionP11NA);
-        opcionP11NA.setText("Sin relevancia");
-
-        etP12.setText("jLabel1");
-
-        grupoP12.add(opcionP12Si);
-        opcionP12Si.setText("Si");
-
-        grupoP12.add(opcionP12No);
-        opcionP12No.setText("No");
-
-        grupoP12.add(opcionP12NA);
-        opcionP12NA.setText("Sin relevancia");
-
         javax.swing.GroupLayout panelPreguntasLayout = new javax.swing.GroupLayout(panelPreguntas);
         panelPreguntas.setLayout(panelPreguntasLayout);
         panelPreguntasLayout.setHorizontalGroup(
@@ -367,22 +338,6 @@ public class UI extends javax.swing.JFrame {
                 .addComponent(opcionP10No)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP10NA))
-            .addGroup(panelPreguntasLayout.createSequentialGroup()
-                .addComponent(etP11, javax.swing.GroupLayout.DEFAULT_SIZE, 417, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(opcionP11Si)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(opcionP11No)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(opcionP11NA))
-            .addGroup(panelPreguntasLayout.createSequentialGroup()
-                .addComponent(etP12, javax.swing.GroupLayout.DEFAULT_SIZE, 417, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(opcionP12Si)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(opcionP12No)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(opcionP12NA))
         );
         panelPreguntasLayout.setVerticalGroup(
             panelPreguntasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -446,19 +401,7 @@ public class UI extends javax.swing.JFrame {
                     .addComponent(opcionP10Si)
                     .addComponent(opcionP10No)
                     .addComponent(opcionP10NA))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(panelPreguntasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(etP11)
-                    .addComponent(opcionP11Si)
-                    .addComponent(opcionP11No)
-                    .addComponent(opcionP11NA))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(panelPreguntasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(etP12)
-                    .addComponent(opcionP12Si)
-                    .addComponent(opcionP12No)
-                    .addComponent(opcionP12NA))
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -542,7 +485,7 @@ public class UI extends javax.swing.JFrame {
                 .addComponent(panelTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(panelPreguntas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -574,8 +517,7 @@ public class UI extends javax.swing.JFrame {
         etP8.setText(pregunta8);
         etP9.setText(pregunta9);
         etP10.setText(pregunta10);
-        etP11.setText(pregunta11);
-        etP12.setText(pregunta12);
+
     }
     
     /* pone todas las opciona a "No importa"*/
@@ -590,8 +532,6 @@ public class UI extends javax.swing.JFrame {
         opcionP8NA.setSelected(true);
         opcionP9NA.setSelected(true);
         opcionP10NA.setSelected(true);
-        opcionP11NA.setSelected(true);
-        opcionP12NA.setSelected(true);
     }
     
     private void botonLimpiarOpcionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonLimpiarOpcionesActionPerformed
@@ -599,22 +539,30 @@ public class UI extends javax.swing.JFrame {
     }//GEN-LAST:event_botonLimpiarOpcionesActionPerformed
 
     private void botonRespuestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonRespuestaActionPerformed
-        String t1 = "consult('src/prolog/lenguajes.pl')";
-        Query q1 = new Query(t1);
-        System.out.println(t1 + " " + (q1.hasSolution() ? "correcto" : "fallo"));
-        
-        
-        String consulta = generarConsulta();
-        Query q2 = new Query(consulta);
-        System.out.println("La solución para " + consulta +" :");
-        Hashtable s;
-        while(q2.hasMoreSolutions()){
-            s = q2.nextSolution();
-            System.out.println("LENGUAJE = " + s.get("LENGUAJE"));
-            System.out.println("FRAMEWORK = " + s.get("FRAMEWORK"));
-            System.out.println("IDE = " + s.get("IDE"));
-            System.out.println("BD = " + s.get("BD")+ "\n");
-        }
+
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                String t1 = "consult('src/prolog/lenguajes.pl')";
+                Query q1 = new Query(t1);
+                System.out.println(t1 + " " + (q1.hasSolution() ? "correcto" : "fallo"));
+                String consulta = generarConsulta();
+                Query q2 = new Query(consulta);
+                System.out.println("La solución para " + consulta +" :");
+                Hashtable s;
+                String resultado = "";
+                while(q2.hasMoreSolutions()){
+                    s = q2.nextSolution();
+                    resultado += "Lenguaje de programación: " + s.get("LENGUAJE")+"\n";
+                    resultado += "Framework: " + s.get("FRAMEWORK")+"\n";
+                    resultado += "Entorno de desarrollo (IDE): " + s.get("IDE")+"\n";
+                    resultado += "Base de datos: " + s.get("BD")+"\n\n";
+                    System.out.println(resultado);
+                }
+                VentanaResultados vr = new VentanaResultados();
+                vr.setResultados(resultado);
+                vr.setVisible(true);
+            }
+        });  
     }//GEN-LAST:event_botonRespuestaActionPerformed
 
     private void botonAyudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonAyudaActionPerformed
@@ -725,41 +673,8 @@ public class UI extends javax.swing.JFrame {
         }
         return respuesta; 
     }
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(UI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(UI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(UI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(UI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new UI().setVisible(true);
-            }
-        });
-    }
+   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton botonAyuda;
@@ -768,8 +683,6 @@ public class UI extends javax.swing.JFrame {
     private javax.swing.JDialog dialogoAyuda;
     private javax.swing.JLabel etP1;
     private javax.swing.JLabel etP10;
-    private javax.swing.JLabel etP11;
-    private javax.swing.JLabel etP12;
     private javax.swing.JLabel etP2;
     private javax.swing.JLabel etP3;
     private javax.swing.JLabel etP4;
@@ -798,12 +711,6 @@ public class UI extends javax.swing.JFrame {
     private javax.swing.JRadioButton opcionP10NA;
     private javax.swing.JRadioButton opcionP10No;
     private javax.swing.JRadioButton opcionP10Si;
-    private javax.swing.JRadioButton opcionP11NA;
-    private javax.swing.JRadioButton opcionP11No;
-    private javax.swing.JRadioButton opcionP11Si;
-    private javax.swing.JRadioButton opcionP12NA;
-    private javax.swing.JRadioButton opcionP12No;
-    private javax.swing.JRadioButton opcionP12Si;
     private javax.swing.JRadioButton opcionP1NA;
     private javax.swing.JRadioButton opcionP1No;
     private javax.swing.JRadioButton opcionP1Si;
