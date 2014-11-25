@@ -44,6 +44,10 @@ public class UI extends javax.swing.JFrame {
         grupoP10 = new javax.swing.ButtonGroup();
         grupoP11 = new javax.swing.ButtonGroup();
         grupoP12 = new javax.swing.ButtonGroup();
+        dialogoAyuda = new javax.swing.JDialog();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jLabel2 = new javax.swing.JLabel();
         panelPreguntas = new javax.swing.JPanel();
         etP1 = new javax.swing.JLabel();
         opcionP1Si = new javax.swing.JRadioButton();
@@ -100,7 +104,51 @@ public class UI extends javax.swing.JFrame {
         botonRespuesta = new javax.swing.JButton();
         botonAyuda = new javax.swing.JButton();
 
+        dialogoAyuda.setTitle("Ayuda");
+        dialogoAyuda.setLocationByPlatform(true);
+        dialogoAyuda.setMinimumSize(new java.awt.Dimension(350, 160));
+        dialogoAyuda.setPreferredSize(new java.awt.Dimension(350, 160));
+        dialogoAyuda.setResizable(false);
+
+        jTextArea1.setBackground(new java.awt.Color(204, 204, 204));
+        jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jTextArea1.setLineWrap(true);
+        jTextArea1.setRows(4);
+        jTextArea1.setText("1. Seleccione las opciones de acuerdo a la aplicación \nweb que desea realizar.\n2. Presione el botón \"Siguiente\" para verificar las \nherramientas recomendadas para utilizar.");
+        jTextArea1.setAutoscrolls(false);
+        jTextArea1.setDisabledTextColor(new java.awt.Color(51, 51, 51));
+        jTextArea1.setEnabled(false);
+        jTextArea1.setMinimumSize(new java.awt.Dimension(305, 89));
+        jScrollPane1.setViewportView(jTextArea1);
+
+        jLabel2.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("Ayuda");
+
+        javax.swing.GroupLayout dialogoAyudaLayout = new javax.swing.GroupLayout(dialogoAyuda.getContentPane());
+        dialogoAyuda.getContentPane().setLayout(dialogoAyudaLayout);
+        dialogoAyudaLayout.setHorizontalGroup(
+            dialogoAyudaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dialogoAyudaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(dialogoAyudaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 330, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        dialogoAyudaLayout.setVerticalGroup(
+            dialogoAyudaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dialogoAyudaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 152, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Sistema experto para la escogencia de herramientas en el desarrollo de software");
         setResizable(false);
 
         etP1.setText("jLabel1");
@@ -414,7 +462,7 @@ public class UI extends javax.swing.JFrame {
         );
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("TITULO");
+        jLabel1.setText("Aplicaciones Web");
 
         javax.swing.GroupLayout panelTituloLayout = new javax.swing.GroupLayout(panelTitulo);
         panelTitulo.setLayout(panelTituloLayout);
@@ -448,6 +496,11 @@ public class UI extends javax.swing.JFrame {
         });
 
         botonAyuda.setText("Ayuda");
+        botonAyuda.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonAyudaActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -563,6 +616,10 @@ public class UI extends javax.swing.JFrame {
             System.out.println("BD = " + s.get("BD")+ "\n");
         }
     }//GEN-LAST:event_botonRespuestaActionPerformed
+
+    private void botonAyudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonAyudaActionPerformed
+        dialogoAyuda.setVisible(true);
+    }//GEN-LAST:event_botonAyudaActionPerformed
     
     private String generarConsulta(){
         String consulta = "";
@@ -708,6 +765,7 @@ public class UI extends javax.swing.JFrame {
     private javax.swing.JButton botonAyuda;
     private javax.swing.JButton botonLimpiarOpciones;
     private javax.swing.JButton botonRespuesta;
+    private javax.swing.JDialog dialogoAyuda;
     private javax.swing.JLabel etP1;
     private javax.swing.JLabel etP10;
     private javax.swing.JLabel etP11;
@@ -733,7 +791,10 @@ public class UI extends javax.swing.JFrame {
     private javax.swing.ButtonGroup grupoP8;
     private javax.swing.ButtonGroup grupoP9;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JRadioButton opcionP10NA;
     private javax.swing.JRadioButton opcionP10No;
     private javax.swing.JRadioButton opcionP10Si;
