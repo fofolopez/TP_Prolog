@@ -612,7 +612,7 @@ public class UI extends javax.swing.JFrame {
     private String obtenerAprendizaje(){
         String respuesta = "_"; 
         if(opcionP5Si.isSelected()){
-            respuesta = "apr_normal";
+            respuesta = "_";
         }else if(opcionP5No.isSelected()){
             respuesta = "apr_facil";
         }
