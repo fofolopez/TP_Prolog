@@ -6,6 +6,7 @@
 package se;
 
 import java.util.Hashtable;
+import javax.swing.JOptionPane;
 import jpl.Query;
 
 /**
@@ -404,6 +405,7 @@ public class UI extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jLabel1.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Aplicaciones Web");
 
@@ -542,9 +544,16 @@ public class UI extends javax.swing.JFrame {
 
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                String t1 = "consult('src/prolog/lenguajes.pl')";
-                Query q1 = new Query(t1);
-                System.out.println(t1 + " " + (q1.hasSolution() ? "correcto" : "fallo"));
+                String t1 = "consult('lenguajes.pl')";
+                try{
+                    Query q1 = new Query(t1);
+                    System.out.println(t1 + " " + (q1.hasSolution() ? "correcto" : "fallo")); 
+                }catch(Exception e){
+                    System.out.println("EEE");
+                    new JOptionPane().showMessageDialog(null, "No se encuentra el archivo de prolog.", "No se encuentra el archivo de prolog.", JOptionPane.ERROR_MESSAGE);
+                    System.exit(-1);
+                }
+                
                 String consulta = generarConsulta();
                 Query q2 = new Query(consulta);
                 System.out.println("La solución para " + consulta +" :");
