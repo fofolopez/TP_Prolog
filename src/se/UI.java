@@ -5,6 +5,9 @@
  */
 package se;
 
+import java.util.Hashtable;
+import jpl.Query;
+
 /**
  *
  * @author adolfo
@@ -95,6 +98,7 @@ public class UI extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         botonLimpiarOpciones = new javax.swing.JButton();
         botonRespuesta = new javax.swing.JButton();
+        botonAyuda = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -244,7 +248,7 @@ public class UI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP1NA))
             .addGroup(panelPreguntasLayout.createSequentialGroup()
-                .addComponent(etP2, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
+                .addComponent(etP2, javax.swing.GroupLayout.DEFAULT_SIZE, 417, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP2Si)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -252,7 +256,7 @@ public class UI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP2NA))
             .addGroup(panelPreguntasLayout.createSequentialGroup()
-                .addComponent(etP3, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
+                .addComponent(etP3, javax.swing.GroupLayout.DEFAULT_SIZE, 417, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP3Si)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -260,7 +264,7 @@ public class UI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP3NA))
             .addGroup(panelPreguntasLayout.createSequentialGroup()
-                .addComponent(etP4, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
+                .addComponent(etP4, javax.swing.GroupLayout.DEFAULT_SIZE, 417, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP4Si)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -268,7 +272,7 @@ public class UI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP4NA))
             .addGroup(panelPreguntasLayout.createSequentialGroup()
-                .addComponent(etP5, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
+                .addComponent(etP5, javax.swing.GroupLayout.DEFAULT_SIZE, 417, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP5Si)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -276,7 +280,7 @@ public class UI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP5NA))
             .addGroup(panelPreguntasLayout.createSequentialGroup()
-                .addComponent(etP6, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
+                .addComponent(etP6, javax.swing.GroupLayout.DEFAULT_SIZE, 417, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP6Si)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -284,7 +288,7 @@ public class UI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP6NA))
             .addGroup(panelPreguntasLayout.createSequentialGroup()
-                .addComponent(etP7, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
+                .addComponent(etP7, javax.swing.GroupLayout.DEFAULT_SIZE, 417, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP7Si)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -292,7 +296,7 @@ public class UI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP7NA))
             .addGroup(panelPreguntasLayout.createSequentialGroup()
-                .addComponent(etP8, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
+                .addComponent(etP8, javax.swing.GroupLayout.DEFAULT_SIZE, 417, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP8Si)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -300,7 +304,7 @@ public class UI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP8NA))
             .addGroup(panelPreguntasLayout.createSequentialGroup()
-                .addComponent(etP9, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
+                .addComponent(etP9, javax.swing.GroupLayout.DEFAULT_SIZE, 417, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP9Si)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -308,7 +312,7 @@ public class UI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP9NA))
             .addGroup(panelPreguntasLayout.createSequentialGroup()
-                .addComponent(etP10, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
+                .addComponent(etP10, javax.swing.GroupLayout.DEFAULT_SIZE, 417, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP10Si)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -316,7 +320,7 @@ public class UI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP10NA))
             .addGroup(panelPreguntasLayout.createSequentialGroup()
-                .addComponent(etP11, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
+                .addComponent(etP11, javax.swing.GroupLayout.DEFAULT_SIZE, 417, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP11Si)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -324,7 +328,7 @@ public class UI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP11NA))
             .addGroup(panelPreguntasLayout.createSequentialGroup()
-                .addComponent(etP12, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
+                .addComponent(etP12, javax.swing.GroupLayout.DEFAULT_SIZE, 417, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(opcionP12Si)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -416,10 +420,10 @@ public class UI extends javax.swing.JFrame {
         panelTitulo.setLayout(panelTituloLayout);
         panelTituloLayout.setHorizontalGroup(
             panelTituloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelTituloLayout.createSequentialGroup()
-                .addGap(91, 91, 91)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelTituloLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         panelTituloLayout.setVerticalGroup(
             panelTituloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -437,6 +441,13 @@ public class UI extends javax.swing.JFrame {
         });
 
         botonRespuesta.setText("Siguiente");
+        botonRespuesta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonRespuestaActionPerformed(evt);
+            }
+        });
+
+        botonAyuda.setText("Ayuda");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -444,6 +455,8 @@ public class UI extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(botonLimpiarOpciones)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(botonAyuda)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(botonRespuesta))
         );
@@ -453,7 +466,8 @@ public class UI extends javax.swing.JFrame {
                 .addGap(0, 27, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(botonLimpiarOpciones)
-                    .addComponent(botonRespuesta)))
+                    .addComponent(botonRespuesta)
+                    .addComponent(botonAyuda)))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -484,18 +498,18 @@ public class UI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
     
     private void inicializarPreguntas(){
-        String pregunta1 = "¿Esta bien?";
-        String pregunta2 = "¿Esta bien?";
-        String pregunta3 = "¿Esta bien?";
-        String pregunta4 = "¿Esta bien?";
-        String pregunta5 = "¿Esta bien?";
-        String pregunta6 = "¿Esta bien?";
-        String pregunta7 = "¿Esta bien?";
-        String pregunta8 = "¿Esta bien?";
-        String pregunta9 = "¿Esta bien?";
-        String pregunta10 = "¿Esta bien?";
-        String pregunta11 = "¿Esta bien?";
-        String pregunta12 = "¿Esta bien?";
+        String pregunta1 =  "1.¿Pretende desarrollar una aplicación muy grande?";
+        String pregunta2 =  "2.¿Su aplicación requiere altos estándares de seguridad?";
+        String pregunta3 =  "3.¿Prefiere trabajar con herramientas de pago?";
+        String pregunta4 =  "4.¿Los datos que utilizará su aplicación son muy estructurados?";
+        String pregunta5 =  "5.¿Su equipo de trabajo tiene mucha experiencia?";
+        String pregunta6 =  "6.¿Le gustaría utilizar tecnologías emergentes?";
+        String pregunta7 =  "7.¿Es importante que la configuración de las herramientas sea muy fácil?";
+        String pregunta8 =  "8.¿Necesita trabajar en un ambiente multiplataforma?";
+        String pregunta9 =  "9.¿La aplicación debe atender a un gran volumen de usuarios?";
+        String pregunta10 = "10.¿Es la eficiencia su principal requerimiento?";
+        String pregunta11 = "11.¿Esta bien?";
+        String pregunta12 = "12.¿Esta bien?";
  
         etP1.setText(pregunta1);
         etP2.setText(pregunta2);
@@ -531,6 +545,129 @@ public class UI extends javax.swing.JFrame {
         limpiarSeleccion();
     }//GEN-LAST:event_botonLimpiarOpcionesActionPerformed
 
+    private void botonRespuestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonRespuestaActionPerformed
+        String t1 = "consult('src/prolog/lenguajes.pl')";
+        Query q1 = new Query(t1);
+        System.out.println(t1 + " " + (q1.hasSolution() ? "correcto" : "fallo"));
+        
+        
+        String consulta = generarConsulta();
+        Query q2 = new Query(consulta);
+        System.out.println("La solución para " + consulta +" :");
+        Hashtable s;
+        while(q2.hasMoreSolutions()){
+            s = q2.nextSolution();
+            System.out.println("LENGUAJE = " + s.get("LENGUAJE"));
+            System.out.println("FRAMEWORK = " + s.get("FRAMEWORK"));
+            System.out.println("IDE = " + s.get("IDE"));
+            System.out.println("BD = " + s.get("BD")+ "\n");
+        }
+    }//GEN-LAST:event_botonRespuestaActionPerformed
+    
+    private String generarConsulta(){
+        String consulta = "";
+        String tamaño, aprendizaje, comp_inst, seguridad, eficiencia, escalabilidad, licencia, mantenibilidad, tipo_bd;
+        tamaño = obtenerTamaño();
+        aprendizaje = obtenerAprendizaje();
+        comp_inst = obtenerCompInst();
+        seguridad = obtenerSeguridad();
+        eficiencia = obtenerEficiencia();
+        escalabilidad = obtenerEscalabilidad();
+        licencia = obtenerLicencia();
+        mantenibilidad = obtenerMantenibilidad();
+        tipo_bd = obtenerTipoBD();
+
+        consulta = "herramientas(LENGUAJE,"+tamaño+",FRAMEWORK,"+aprendizaje+","
+                +comp_inst+",IDE,"+seguridad+","+eficiencia+","+escalabilidad+","
+                +licencia+","+mantenibilidad+",BD,"+tipo_bd+")";
+        return consulta;
+    }
+    
+    private String obtenerTamaño(){
+        String respuesta = "_"; 
+        if(opcionP1Si.isSelected()){
+            respuesta = "grande";
+        }else if(opcionP1No.isSelected()){
+            respuesta = "regular";
+        }
+        return respuesta;
+    }
+    
+    private String obtenerAprendizaje(){
+        String respuesta = "_"; 
+        if(opcionP5Si.isSelected()){
+            respuesta = "apr_normal";
+        }else if(opcionP5No.isSelected()){
+            respuesta = "apr_facil";
+        }
+        return respuesta;
+    }
+    
+    private String obtenerCompInst() {
+        String respuesta = "_"; 
+        if(opcionP7Si.isSelected()){
+            respuesta = "cmp_normal";
+        }else if(opcionP7No.isSelected()){
+            respuesta = "cmp_dificil";
+        }
+        return respuesta;    
+    }
+
+    private String obtenerSeguridad() {
+        String respuesta = "_"; 
+        if(opcionP2Si.isSelected()){
+            respuesta = "seguro";
+        }else if(opcionP2No.isSelected()){
+            respuesta = "no_seguro";
+        }
+        return respuesta; 
+    }
+
+    private String obtenerEficiencia() {
+        String respuesta = "_";  
+        if(opcionP10Si.isSelected()){
+            respuesta = "eficiente";
+        }else if(opcionP10No.isSelected()){
+            respuesta = "no_eficiente";
+        }
+        return respuesta; 
+    }
+
+    private String obtenerEscalabilidad() {
+        String respuesta = "_"; 
+        if(opcionP7Si.isSelected()){
+            respuesta = "escalable";
+        }else if(opcionP7No.isSelected()){
+            respuesta = "no_escalable";
+        }
+        return respuesta; 
+    }
+
+    private String obtenerLicencia() {
+        String respuesta = "_"; 
+        if(opcionP3Si.isSelected()){
+            respuesta = "pago";
+        }else if(opcionP3No.isSelected()){
+            respuesta = "gratis";
+        }
+        return respuesta; 
+    }
+
+    private String obtenerMantenibilidad() {
+        String respuesta = "_"; 
+        
+        return respuesta; 
+    }
+
+    private String obtenerTipoBD(){
+        String respuesta = "_"; 
+        if(opcionP4Si.isSelected()){
+            respuesta = "sql";
+        }else if(opcionP4No.isSelected()){
+            respuesta = "no_sql";
+        }
+        return respuesta; 
+    }
     /**
      * @param args the command line arguments
      */
@@ -568,6 +705,7 @@ public class UI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton botonAyuda;
     private javax.swing.JButton botonLimpiarOpciones;
     private javax.swing.JButton botonRespuesta;
     private javax.swing.JLabel etP1;
@@ -635,4 +773,6 @@ public class UI extends javax.swing.JFrame {
     private javax.swing.JPanel panelPreguntas;
     private javax.swing.JPanel panelTitulo;
     // End of variables declaration//GEN-END:variables
+
+    
 }
